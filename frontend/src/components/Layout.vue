@@ -35,7 +35,7 @@
         <div class="flex items-center flex-1">
           <div class="flex items-center justify-between w-full md:w-auto">
             <router-link to="/">
-              <span class="sr-only">The Web Forum</span>
+              <span class="sr-only">The Forum</span>
               <span class="text-3xl">🤣</span>
             </router-link>
           </div>

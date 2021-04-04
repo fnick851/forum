@@ -1,15 +1,15 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Home from "./views/Home.vue";
-import Forum from "./views/Forum.vue";
+import { createRouter, createWebHistory } from "vue-router"
+import Home from "./views/Home.vue"
+import Posts from "./views/Posts.vue"
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/forum", component: Forum },
-];
+  { path: "/posts", component: Posts },
+]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-});
+})
 
-export { router };
+export { router }

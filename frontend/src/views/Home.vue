@@ -29,7 +29,7 @@
                 <div class="mt-1">
                   <div>
                     <router-link
-                      to="/forum"
+                      to="/posts"
                       class="w-full inline-flex justify-center py-2 px-4 border border-indigo-200 rounded-md shadow-sm bg-indigo-200 text-sm font-medium text-gray-700 hover:bg-indigo-300"
                     >
                       Browse the Forum
