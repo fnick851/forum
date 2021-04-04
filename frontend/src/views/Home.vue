@@ -16,8 +16,8 @@
               <p
                 class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
               >
-                A forum on the web for any topics you like, which means you can
-                post and reply to anything you like.
+                A forum on the web for anything. It means you can post and reply
+                to whatever you like.
               </p>
             </div>
           </div>
@@ -32,7 +32,7 @@
                       to="/posts"
                       class="w-full inline-flex justify-center py-2 px-4 border border-indigo-200 rounded-md shadow-sm bg-indigo-200 text-sm font-medium text-gray-700 hover:bg-indigo-300"
                     >
-                      Browse the Forum
+                      Browse the forum
                     </router-link>
                   </div>
                 </div>
@@ -97,7 +97,7 @@
                         type="submit"
                         class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
-                        Create your account
+                        Create an account
                       </button>
                     </div>
                   </form>
@@ -125,5 +125,5 @@
 </template>
 
 <script lang="ts" setup>
-import Layout from "../components/Layout.vue"
+import Layout from '../components/Layout.vue'
 </script>
