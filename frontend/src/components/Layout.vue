@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import LoginForm from './LoginForm.vue'
 
 const modalOpen = ref(false)
+const loggedIn = ref(false)
 </script>
 
 <template>
@@ -47,9 +48,15 @@ const modalOpen = ref(false)
             </router-link>
           </div>
         </div>
-        <div class="flex">
+        <div @click="modalOpen = true" class="flex cursor-pointer">
           <a
-            @click="modalOpen = true"
+            v-if="loggedIn"
+            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
+          >
+            Log Out
+          </a>
+          <a
+            v-else
             class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
           >
             Log in
