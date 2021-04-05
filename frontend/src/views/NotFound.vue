@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import Layout from '../components/Layout.vue'
+</script>
+
 <template>
   <Layout>
     <div class="px-4 sm:px-6 mx-auto max-w-7xl">
@@ -28,7 +32,3 @@
     </div>
   </Layout>
 </template>
-
-<script lang="ts" setup>
-import Layout from '../components/Layout.vue'
-</script>

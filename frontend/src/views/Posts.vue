@@ -1,3 +1,10 @@
+<script lang="ts" setup>
+import { ref } from '@vue/reactivity'
+import Layout from '../components/Layout.vue'
+
+const isMenuOpen = ref(false)
+</script>
+
 <template>
   <Layout>
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
@@ -124,10 +131,3 @@
     </div>
   </Layout>
 </template>
-
-<script lang="ts" setup>
-import { ref } from '@vue/reactivity'
-import Layout from '../components/Layout.vue'
-
-const isMenuOpen = ref(false)
-</script>

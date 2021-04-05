@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import Layout from '../components/Layout.vue'
+</script>
+
 <template>
   <Layout>
     <main class="mt-16 sm:mt-32">
@@ -123,7 +127,3 @@
     </main>
   </Layout>
 </template>
-
-<script lang="ts" setup>
-import Layout from '../components/Layout.vue'
-</script>
