@@ -56,28 +56,13 @@ import Layout from '../components/Layout.vue'
                 <div class="mt-6">
                   <form action="#" method="POST" class="space-y-6">
                     <div>
-                      <label for="name" class="sr-only">Full name</label>
+                      <label for="name" class="sr-only">Username</label>
                       <input
                         type="text"
                         name="name"
                         id="name"
                         autocomplete="name"
-                        placeholder="Full name"
-                        required
-                        class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-                      />
-                    </div>
-
-                    <div>
-                      <label for="mobile-or-email" class="sr-only"
-                        >Mobile number or email</label
-                      >
-                      <input
-                        type="text"
-                        name="mobile-or-email"
-                        id="mobile-or-email"
-                        autocomplete="email"
-                        placeholder="Mobile number or email"
+                        placeholder="Username"
                         required
                         class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
                       />
@@ -90,7 +75,20 @@ import Layout from '../components/Layout.vue'
                         name="password"
                         type="password"
                         placeholder="Password"
-                        autocomplete="current-password"
+                        required
+                        class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="confirm-password" class="sr-only"
+                        >Confirm password</label
+                      >
+                      <input
+                        id="confirm-password"
+                        name="confirm-password"
+                        type="password"
+                        placeholder="Confirm password"
                         required
                         class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
                       />
