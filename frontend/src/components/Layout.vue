@@ -44,7 +44,7 @@ const loggedIn = ref(false)
           <div class="flex items-center justify-between w-full md:w-auto">
             <router-link to="/">
               <span class="sr-only">The Forum</span>
-              <span class="text-3xl">🤣</span>
+              <span class="text-3xl text-white">forum</span>
             </router-link>
           </div>
         </div>

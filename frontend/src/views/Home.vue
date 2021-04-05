@@ -20,8 +20,8 @@ import Layout from '../components/Layout.vue'
               <p
                 class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
               >
-                A forum on the web for anything. It means you can post and reply
-                to whatever you like.
+                A forum on the web for anything. It is a place where you can
+                post and reply to whatever you like.
               </p>
             </div>
           </div>
