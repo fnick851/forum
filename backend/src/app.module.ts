@@ -5,9 +5,9 @@ import { ServeStaticModule } from '@nestjs/serve-static'
 import { join } from 'path'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { ConfigModule } from '@nestjs/config'
-import { UsersModule } from './users/users.module';
-import { PostsModule } from './posts/posts.module';
-import { CommentsModule } from './comments/comments.module';
+import { UsersModule } from './users/users.module'
+import { PostsModule } from './posts/posts.module'
+import { CommentsModule } from './comments/comments.module'
 
 @Module({
   imports: [
