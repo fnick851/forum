@@ -10,6 +10,9 @@ export class Comment {
   @Column()
   content: string
 
+  @Column()
+  madeOn: Date
+
   @ManyToOne(() => User, (user) => user.comments)
   author: User
 

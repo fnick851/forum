@@ -13,6 +13,9 @@ export class User {
   @Column()
   password: string
 
+  @Column()
+  createdOn: Date
+
   @OneToMany(() => Post, (post) => post.author)
   posts: Post[]
 

@@ -22,7 +22,10 @@ export class PostsService {
   }
 
   async create(createPostDto: CreatePostDto) {
-    const post = this.postRepository.create(createPostDto)
+    const post = this.postRepository.create({
+      ...createPostDto,
+      postedOn: new Date(Date.now()).toLocaleString(),
+    })
     return this.postRepository.save(post)
   }
 }
