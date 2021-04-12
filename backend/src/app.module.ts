@@ -14,10 +14,10 @@ import { JwtAuthGuard } from './auth/guards/jwt-auth.guard'
 
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'client'),
     }),
-    ConfigModule.forRoot({}),
     TypeOrmModule.forRootAsync({
       useFactory: () => ({
         type: 'postgres', // type of the database
