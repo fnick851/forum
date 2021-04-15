@@ -26,6 +26,6 @@ export class PostsService {
       ...createPostDto,
       postedOn: new Date(Date.now()).toLocaleString(),
     })
-    return this.postRepository.save(post)
+    return await this.postRepository.save(post)
   }
 }

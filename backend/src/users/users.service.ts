@@ -13,7 +13,7 @@ export class UsersService {
   ) {}
 
   async findOne(username: string): Promise<User | undefined> {
-    return this.usersRepository.findOne({ username })
+    return await this.usersRepository.findOne({ username })
   }
 
   async create(createUserDto: CreateUserDto) {
@@ -26,6 +26,6 @@ export class UsersService {
       password: hash,
       createdOn: new Date(Date.now()).toLocaleString(),
     })
-    return this.usersRepository.save(post)
+    return await this.usersRepository.save(post)
   }
 }
